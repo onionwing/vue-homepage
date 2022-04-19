@@ -6,11 +6,15 @@ Vue.config.productionTip = false
 
 import Collapse from "@/components/Collapse"
 import Search from "@/components/Search"
+import Logo from "@/components/Logo"
 
-Vue.component(Collapse.name,Collapse)
-Vue.component(Search.name,Search)
+import '@/mock/mockServe'
 
-import ElementUI  from 'element-ui';
+Vue.component(Collapse.name, Collapse)
+Vue.component(Search.name, Search)
+Vue.component(Logo.name, Logo)
+
+import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ElementUI)
